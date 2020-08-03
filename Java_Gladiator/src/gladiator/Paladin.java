@@ -10,11 +10,9 @@ public class Paladin extends Gladiator {
 	}
 
 	
-	public int afterAttack() {
-		
-		//if
-		
-		return healthPoint;
+	public void attacked(int enemyAttackPower)
+	{
+		this.healthPoint = (this.healthPoint - enemyAttackPower + 1);
 	}
 	
 	
