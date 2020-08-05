@@ -13,7 +13,7 @@ public class Arena {
 		while( (g1.getHealthPoint() > 0) && (g2.getHealthPoint() > 0) )
 		{
 			try {
-				Thread.sleep(500);
+				Thread.sleep(400);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

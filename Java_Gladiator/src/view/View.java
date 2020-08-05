@@ -2,6 +2,8 @@ package view;
 
 import gladiator.Arena;
 import gladiator.Gladiator;
+import gladiator.Paladin;
+import gladiator.Warrior;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -15,7 +17,7 @@ import javafx.stage.Stage;
 
 public class View {
 	
-	public View (Stage stage, Arena arena,Gladiator gladiator1, Gladiator gladiator2, Gladiator g1, Gladiator g2)
+	public View (Stage stage, Arena arena,Gladiator gladiator1, Gladiator gladiator2, Gladiator g1, Gladiator g2, Warrior w, Paladin p)
 	
 	{
 		//Creating a Grid Pane 

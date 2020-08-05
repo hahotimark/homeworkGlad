@@ -2,6 +2,8 @@ package main;
 
 import gladiator.Arena;
 import gladiator.Gladiator;
+import gladiator.Paladin;
+import gladiator.Warrior;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import view.CongratView;
@@ -19,17 +21,20 @@ public class Main extends Application {
 	public void start(Stage arg0) throws Exception {
 		// TODO Auto-generated method stub
 		
-		Gladiator gladiator1 = new Gladiator("Spartacus");
-		Gladiator gladiator2 = new Gladiator("Hexus");
+		//Gladiator gladiator1 = new Gladiator("Spartacus");
+		//Gladiator gladiator2 = new Gladiator("Hexus");
+		
+		Warrior warrior = new Warrior("Laci");
+		Paladin paladin = new Paladin("Béla");
 		
 		Arena arena = new Arena();
 		
 		
-		View view = new View(arg0, arena, gladiator1, gladiator2, gladiator1, gladiator2);
+		View view = new View(arg0, arena, warrior, paladin, paladin, paladin, warrior, paladin); // 2x?
 
 		Stage secondWindow = new Stage();
 
-		CongratView view2 = new CongratView(secondWindow, arena, gladiator1, gladiator2);
+		CongratView view2 = new CongratView(secondWindow, arena, warrior, paladin);
 		
 
 		
